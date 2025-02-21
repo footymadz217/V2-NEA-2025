@@ -8,13 +8,19 @@ import PersonIcon from "@mui/icons-material/Person";
 import DescriptionIcon from "@mui/icons-material/Description";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./teacher.css";
+import Working from './t_reference';
 import TeacherProfile from './Teacherprofile';
 import { useState } from 'react';
 const Teacher = () => {
   const [profile,setprofile]=useState(false)
-  const [refer,setrefer]=useState(false)
+  const [refer,setref]=useState(false)
   if (profile){
     return <TeacherProfile/>
+  }
+
+  if (refer){
+
+    return <Working/>
   }
 
     return (
@@ -37,7 +43,7 @@ const Teacher = () => {
           </Card>
         </Col>
         <Col md={3} sm={6} xs={12} className="mb-3">
-          <Card className="option-card"onClick={()=>setrefer(true)}>
+          <Card className="option-card" onClick={()=>setref(true)}>
             <Card.Body>
               <AssignmentIcon className="icon" />
               <Card.Title>References</Card.Title>
