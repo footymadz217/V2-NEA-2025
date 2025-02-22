@@ -32,7 +32,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React with Dawood
+          Zahid's NEA Project
         </a>
         <button onClick={handleClick}>Click me</button>
       </header>
