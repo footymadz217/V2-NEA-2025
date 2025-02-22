@@ -30,10 +30,13 @@ const Tgrades = () => {
           <Form.Control type="text" placeholder="Search students..." className="mb-3" />
           <div className="students-box">
             {[
-              "Ahmad Abbas", "Amina Akhtar", "Bilal Baig", "Bushra Begum", "Cyrus Chaudhry",
-              "Camila Chishti", "Dawood Dar", "Dua Durrani", "Ehsan Elahi", "Esma Ebrahim",
-              "Faisal Farooq", "Fatima Fakhr", "Ghazi Ghafoor", "Ghazala Gillani", "Hamza Hassan",
-              "Hina Habib", "Imran Ibrahim", "Iqra Idris", "Junaid Javed", "Jamila Jahan"
+
+"Student 1", "Student 2", "Student 3", "Student 4", 
+"Student 5", "Student 6", "Student 7", "Student 8", 
+"Student 9", "Student 10", "Student 11", "Student 12",
+"Student 13", "Student 14", "Student 15", "Student 16",
+"Student 17", "Student 18", "Student 19", "Student 20"
+
             ].map((student, index) => (
               <p key={index} className="student-name">{student}</p>
             ))}

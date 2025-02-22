@@ -6,11 +6,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./t_reference.css";
 
 export default function Working() {
-    const students = [
-        "Grigorii Bocharskii", "James Chamberlin", "Roman Ganiyev", "Moutaz Helmi", 
-        "Nadia Kennedy", "Mikheil Koberidze", "Mikolaj Kwasow", "Olalla Montes Moreno", 
-        "Fillipa Penev Domoustchiev", "Kaon Read", "Annabelle Richmond Ruff", "Yagiz Efe Yilmaz"
-    ];
+  const students = [
+      "Student 1", "Student 2", "Student 3", "Student 4", 
+      "Student 5", "Student 6", "Student 7", "Student 8", 
+      "Student 9", "Student 10", "Student 11", "Student 12",
+      "Student 13", "Student 14", "Student 15", "Student 16",
+      "Student 17", "Student 18", "Student 19", "Student 20"
+  ];
     
   const [selectedStudent, setSelectedStudent] = useState(students[0]);
   const [referenceText, setReferenceText] = useState("HI i am a student");

@@ -11,7 +11,7 @@ function App() {
   const [showFirst, setShowFirst] = useState(false);
 
   
-  function handleClick() {
+  function handleClickForAdmin() {
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(
       <React.StrictMode>
@@ -22,6 +22,38 @@ function App() {
     
   }
 
+  function handleClickForStudent() {
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+      <React.StrictMode>
+     <Admin/>
+       
+      </React.StrictMode>
+    );
+    
+  }
+
+  function handleClickForSubjectTeacher() {
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+      <React.StrictMode>
+     <Admin/>
+       
+      </React.StrictMode>
+    );
+    
+  }
+
+  function handleClickForFormTutor() {
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+      <React.StrictMode>
+     <Admin/>
+       
+      </React.StrictMode>
+    );
+    
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -34,7 +66,11 @@ function App() {
         >
           Zahid's NEA Project
         </a>
-        <button onClick={handleClick}>Click me</button>
+        <button onClick={handleClickForAdmin}>Click me to open the Admin Dashboards and Screens</button>
+        <button onClick={handleClickForStudent}>Click me to open the Student Dashboards and Screens</button>
+        <button onClick={handleClickForSubjectTeacher}>Click me to open the Subject Teacher Dashboards and Screens</button>
+        <button onClick={handleClickForFormTutor}>Click me to open the Form Tutor Dashboards and Screens</button>
+        
       </header>
     
 
