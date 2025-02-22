@@ -11,9 +11,11 @@ import "./teacher.css";
 import Working from './t_reference';
 import TeacherProfile from './Teacherprofile';
 import { useState } from 'react';
+import Tgrades from './t_grades';
 const Teacher = () => {
   const [profile,setprofile]=useState(false)
   const [refer,setref]=useState(false)
+  const [grades,setgrades]=useState(false)
   if (profile){
     return <TeacherProfile/>
   }
@@ -21,6 +23,11 @@ const Teacher = () => {
   if (refer){
 
     return <Working/>
+  }
+  if (grades){
+
+    return <Tgrades/>
+    
   }
 
     return (
@@ -35,7 +42,7 @@ const Teacher = () => {
       </div>
       <Row className="mt-4">
         <Col md={3} sm={6} xs={12} className="mb-3">
-          <Card className="option-card">
+          <Card className="option-card"onClick={()=>setgrades(true)}>
             <Card.Body>
               <SchoolIcon className="icon" />
               <Card.Title>Predicted Grades</Card.Title>

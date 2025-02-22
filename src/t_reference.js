@@ -6,14 +6,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./t_reference.css";
 
 export default function Working() {
-  const students = [
-    "Ahmad Abbas", "Amina Akhtar", "Bilal Baig", "Bushra Begum", "Cyrus Chaudhry",
-    "Camila Chisht", "Dua Durrani", "Ehsan Elahi", "Esma Farhan", "Fatima Fakhro",
-    "Ghazal Ghani", "Ghazia Gillani", "Hamza Hashim", "Hina Ibrahim", "Iqra Idris"
-  ];
-  
+    const students = [
+        "Grigorii Bocharskii", "James Chamberlin", "Roman Ganiyev", "Moutaz Helmi", 
+        "Nadia Kennedy", "Mikheil Koberidze", "Mikolaj Kwasow", "Olalla Montes Moreno", 
+        "Fillipa Penev Domoustchiev", "Kaon Read", "Annabelle Richmond Ruff", "Yagiz Efe Yilmaz"
+    ];
+    
   const [selectedStudent, setSelectedStudent] = useState(students[0]);
-  const [referenceText, setReferenceText] = useState("HI i am ahmad abas");
+  const [referenceText, setReferenceText] = useState("HI i am a student");
   const [isEditing, setIsEditing] = useState(false);
 
   return (
