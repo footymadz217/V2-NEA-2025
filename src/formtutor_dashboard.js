@@ -11,7 +11,7 @@ import MyProfile from "./profile";
 import ReferenceCards from "./reference"; // ✅ ADDED BACK!
 import PersonalStatement from "./personal_statment"; // ✅ ADDED BACK!
 
-export default function Academia() {
+export default function FormTutorDashboard() {
   const [currentScreen, setCurrentScreen] = useState("dashboard");
 
   return (
@@ -21,7 +21,7 @@ export default function Academia() {
           <Typography variant="h4" className="mt-4 academia-title">
             Welcome to <span className="brand">Academia360</span>
           </Typography>
-          <Typography variant="subtitle1" className="home-page">Student Dashboard</Typography>
+          <Typography variant="subtitle1" className="home-page">Form Tutor Dashboard</Typography>
 
           <Row className="mt-4">
             <Col md={3} sm={6} xs={12} className="mb-3">

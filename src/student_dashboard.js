@@ -4,17 +4,20 @@ import { School, Person } from "@mui/icons-material";
 import './student.css';
 import Academia from "./academia";
 import Teacher from "./teacher"; 
+import FormTutorDashboard from "./formtutor_dashboard"; // Corrected import path
 
 export default function Admin() {
   const [showStudentScreen, setShowStudentScreen] = useState(false);
   const [showTeacherScreen, setShowTeacherScreen] = useState(false);
+  const [showFormTutorScreen, setShowFormTutorScreen] = useState(false);
 
-  
   const renderContent = () => {
     if (showStudentScreen) {
       return <Academia />;
     } else if (showTeacherScreen) {
       return <Teacher />;
+    } else if (showFormTutorScreen) {
+      return <FormTutorDashboard />;
     } else {
       return (
         <>
@@ -40,6 +43,14 @@ export default function Admin() {
               <Card className="view-card" onClick={() => setShowTeacherScreen(true)}>
                 <Card.Body>
                   <h4>View as Teacher</h4>
+                  <Person fontSize="large" />
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} sm={12} className="mb-3">
+              <Card className="view-card" onClick={() => setShowFormTutorScreen(true)}>
+                <Card.Body>
+                  <h4>View as Form Tutor</h4>
                   <Person fontSize="large" />
                 </Card.Body>
               </Card>
