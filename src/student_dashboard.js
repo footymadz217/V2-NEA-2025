@@ -4,8 +4,8 @@ import { School, Person } from "@mui/icons-material";
 import './student.css';
 import Academia from "./academia";
 import Teacher from "./teacher"; 
-import FormTutorDashboard from "./formtutor_dashboard"; // Corrected import path
-
+import Tutor from "./formtutor_dashboard"
+ 
 export default function Admin() {
   const [showStudentScreen, setShowStudentScreen] = useState(false);
   const [showTeacherScreen, setShowTeacherScreen] = useState(false);
@@ -17,7 +17,7 @@ export default function Admin() {
     } else if (showTeacherScreen) {
       return <Teacher />;
     } else if (showFormTutorScreen) {
-      return <FormTutorDashboard />;
+      return <Tutor />;
     } else {
       return (
         <>
